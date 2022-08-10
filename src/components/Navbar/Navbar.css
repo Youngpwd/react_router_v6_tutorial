@@ -57,7 +57,7 @@ header .logo img {
     }
     .nav-menu {
         position: fixed;
-        left: -100%;
+        right: -100%;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -67,10 +67,16 @@ header .logo img {
         transition: 0.5s;
     }
     .nav-menu.active {
-      left: 0;
+      right: 0;
     }
     .nav-item {
         margin: 1.5rem;
         font-size: 1.8rem;
     }
+}
+
+@media screen and (max-width: 440px) {
+  .hamburger {
+    position: relative;
+  }
 }
