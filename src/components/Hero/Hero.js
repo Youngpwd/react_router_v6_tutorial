@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 import {
   FaDatabase,
@@ -43,15 +44,21 @@ const Hero = () => {
               <div className="form-container">
                 <p className="sign-in-text">Sign in with</p>
                 <div className="social-login">
-                  <i>
-                    <FaFacebook size={20} />
-                  </i>
-                  <i>
-                    <FaTwitter size={20} />
-                  </i>
-                  <i>
-                    <FaGithub size={20} />
-                  </i>
+                  <Link to="/">
+                    <i>
+                      <FaFacebook size={20} />
+                    </i>
+                  </Link>
+                  <Link to="/">
+                    <i>
+                      <FaTwitter size={20} />
+                    </i>
+                  </Link>
+                  <Link to="/">
+                    <i>
+                      <FaGithub size={20} />
+                    </i>
+                  </Link>
                 </div>
                 <div className="divider">
                   <p>
