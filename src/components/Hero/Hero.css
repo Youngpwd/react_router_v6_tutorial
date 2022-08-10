@@ -87,10 +87,16 @@
 }
 
 .hero .social-login i {
-  background-color: #fff;
+  background-color: var(--darkgrey);
   padding: 16px 45px 6px 45px;
   border: 1px solid var(--lightgrey);
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.hero .social-login i:hover{
+  background-color: var(--grey);
+  border: 1px solid black;
 }
 
 .col-2 .divider p {
