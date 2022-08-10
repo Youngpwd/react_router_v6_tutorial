@@ -1,42 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => {
+    setClick(!click);
+  };
+
   return (
     <header>
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={Logo} alt="" />
-          </Link>
+          </NavLink>
         </div>
-        <ul className="nav-menu">
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <NavLink to="/" className="nav-link">
               Home
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <NavLink to="/pricing" className="nav-link">
               Pricing
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <NavLink to="/faq" className="nav-link">
               FAQ
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/" className="nav-link">
+            <NavLink to="/contact" className="nav-link">
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
-        <div className="hamburger">
-            <FaBars />
+        <div className="hamburger" onClick={handleClick}>
+          {click ? (
+            <FaTimes style={{ color: "#fff" }} size={20} />
+          ) : (
+            <FaBars style={{ color: "#fff" }} size={20} />
+          )}
         </div>
       </nav>
     </header>
