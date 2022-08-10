@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
-
+  // console.log(click);
   return (
     <header>
       <nav className="navbar">
@@ -19,7 +19,10 @@ const Navbar = () => {
             <img src={Logo} alt="" />
           </NavLink>
         </div>
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul
+          onClick={() => (click ? handleClick() : null)}
+          className={click ? "nav-menu active" : "nav-menu"}
+        >
           <li className="nav-item">
             <NavLink to="/" className="nav-link">
               Home
@@ -43,9 +46,9 @@ const Navbar = () => {
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {click ? (
-            <FaTimes style={{ color: "#fff" }} size={20} />
+            <FaTimes style={{ color: "#fff", cursor: "pointer" }} size={20} />
           ) : (
-            <FaBars style={{ color: "#fff" }} size={20} />
+            <FaBars style={{ color: "#fff", cursor: "pointer" }} size={20} />
           )}
         </div>
       </nav>
