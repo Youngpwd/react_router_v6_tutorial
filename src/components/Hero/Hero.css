@@ -129,3 +129,39 @@ form input {
 .form-footer span {
   font-weight: 500;
 }
+
+form button {
+  padding: .5rem;
+}
+
+
+@media screen and (max-width: 960px) {
+  .hero {
+    height: auto;
+    width: 100%;
+  }
+  .hero .container {
+    padding: 0 1rem;
+  }
+  .hero .content {
+    grid-template-columns: 1fr;
+  }
+  .hero .col-1 {
+    height: 50vh;
+    padding: .2rem;
+    max-width: 100%;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero .col-2 {
+    padding: 1px;
+    display: none;
+  }
+}
+
+
+
+
+
+
