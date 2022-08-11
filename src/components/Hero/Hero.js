@@ -1,14 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Hero.css";
-import {
-  FaDatabase,
-  FaAsterisk,
-  FaAccusoft,
-  FaFacebook,
-  FaTwitter,
-  FaGithub,
-} from "react-icons/fa";
+import { FaDatabase, FaAsterisk, FaAccusoft } from "react-icons/fa";
+import SignInForm from "../Form/SignInForm";
 
 const Hero = () => {
   return (
@@ -40,48 +33,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-2">
-            <div className="form-layout">
-              <div className="form-container">
-                <p className="sign-in-text">Sign in with</p>
-                <div className="social-login">
-                  <Link to="/">
-                    <i>
-                      <FaFacebook size={20} />
-                    </i>
-                  </Link>
-                  <Link to="/">
-                    <i>
-                      <FaTwitter size={20} />
-                    </i>
-                  </Link>
-                  <Link to="/">
-                    <i>
-                      <FaGithub size={20} />
-                    </i>
-                  </Link>
-                </div>
-                <div className="divider">
-                  <p>
-                    <span>Or</span>
-                  </p>
-                </div>
-                <form action="">
-                  <input type="text" placeholder="Name" required />
-                  <input type="email" placeholder="Email" required />
-                  <input type="password" placeholder="Password" required />
-                  <button type="submit" style={{ cursor: "pointer" }} required>
-                    Create your account
-                  </button>
-                </form>
-              </div>
-              <div className="form-footer">
-                <p>
-                  By signing up, you agree to our{" "}
-                  <span className="primary-color">Terms, Data Policy</span> and{" "}
-                  <span className="primary-color">Cookies Policy</span>.
-                </p>
-              </div>
-            </div>
+            <SignInForm />
           </div>
         </div>
       </div>
