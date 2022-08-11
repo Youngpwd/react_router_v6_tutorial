@@ -66,10 +66,12 @@ const Hero = () => {
                   </p>
                 </div>
                 <form action="">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="password" placeholder="Password" />
-                  <button>Create your account</button>
+                  <input type="text" placeholder="Name" required />
+                  <input type="email" placeholder="Email" required />
+                  <input type="password" placeholder="Password" required />
+                  <button type="submit" style={{ cursor: "pointer" }} required>
+                    Create your account
+                  </button>
                 </form>
               </div>
               <div className="form-footer">
