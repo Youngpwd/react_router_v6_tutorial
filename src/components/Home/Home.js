@@ -1,4 +1,5 @@
 import React from "react";
+import Faq from "../FAQ/Faq";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Pricing from "../Pricing/Pricing";
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Pricing />
       <Testimonial />
+      <Faq />
     </div>
   );
 };
