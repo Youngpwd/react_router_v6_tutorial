@@ -82,8 +82,8 @@
 }
 
 .hero .social-login {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero .social-login i {
@@ -94,7 +94,7 @@
   cursor: pointer;
 }
 
-.hero .social-login i:hover{
+.hero .social-login i:hover {
   background-color: var(--grey);
   border: 1px solid black;
 }
@@ -137,9 +137,25 @@ form input {
 }
 
 form button {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
+.hero .content button {
+  display: none;
+  width: 50%;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.hero .col-2.active {
+  display: flex;
+}
+
+.hero .login-bttn.active {
+  background-color: red;
+  border: 1px solid black;
+}
 
 @media screen and (max-width: 960px) {
   .hero {
@@ -154,7 +170,7 @@ form button {
   }
   .hero .col-1 {
     height: 50vh;
-    padding: .2rem;
+    padding: 0.2rem;
     max-width: 100%;
   }
   .hero h1 {
@@ -163,11 +179,11 @@ form button {
   .hero .col-2 {
     padding: 1px;
     display: none;
+    height: 30vh;
+    margin: 5rem auto 8rem;
+  }
+
+  .hero .content button {
+    display: block;
   }
 }
-
-
-
-
-
-
