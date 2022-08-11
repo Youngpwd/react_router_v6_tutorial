@@ -8,6 +8,9 @@ import "./Home.css";
 
 const Home = () => {
   const [formActive, setFormActive] = useState("");
+  const [menuOn, setMenuOn] = useState(false);
+
+
   const handleForm = () => {
     if (formActive !== "active") {
       setFormActive("active");
@@ -16,9 +19,13 @@ const Home = () => {
     }
   };
 
+  const handleMenu = () => {
+    setMenuOn(!menuOn);
+  }
+
   return (
     <div>
-      <Navbar />
+      <Navbar menuOn={menuOn} handleMenu={handleMenu} />
       <Hero handleClick={handleForm} active={formActive} />
       <Pricing />
       <Testimonial />
