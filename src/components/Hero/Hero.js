@@ -1,18 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Hero.css";
 import { FaDatabase, FaAsterisk, FaAccusoft } from "react-icons/fa";
 import SignInForm from "../Form/SignInForm";
 
-const Hero = () => {
-  const [formActive, setFormActive] = useState("");
-
-  const handleClick = () => {
-    if (formActive !== "active") {
-      setFormActive("active");
-    } else {
-      setFormActive("");
-    }
-  };
+const Hero = ({ handleClick, active }) => {
 
   return (
     <div className="hero">
@@ -42,11 +33,11 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className={`col-2 ${formActive}`}>
+          <div className={`col-2 ${active}`}>
             <SignInForm />
           </div>
-          <button className={`login-bttn ${formActive}`} onClick={handleClick}>
-            {formActive !== "active" ? " Sign up/Login" : "Close"}
+          <button className={`login-bttn ${active}`} onClick={handleClick}>
+            {active !== "active" ? " Sign up/Login" : "Close"}
           </button>
         </div>
       </div>
