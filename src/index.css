@@ -52,8 +52,4 @@ button:hover {
   background-color: var(--secondary);
 }
 
-@media screen and (max-width: 440px) {
-  html {
-    min-width: 440px;
-  }
-}
+

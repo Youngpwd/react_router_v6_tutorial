@@ -163,10 +163,11 @@ form button {
     width: 100%;
   }
   .hero .container {
-    padding: 0 1rem;
+    padding: .5rem;
   }
   .hero .content {
     grid-template-columns: 1fr;
+    height: auto;
   }
   .hero .col-1 {
     height: 50vh;
@@ -179,11 +180,58 @@ form button {
   .hero .col-2 {
     padding: 1px;
     display: none;
-    height: 30vh;
+    height: 40vh;
     margin: 5rem auto 8rem;
   }
 
   .hero .content button {
     display: block;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  html {
+    width: auto;
+  }
+
+  .hero .form-layout {
+    width: 300px;
+    height: fit-content;
+    margin: 3rem auto;
+  }
+
+  .hero .col-2 {
+    width: fit-content;
+  }
+
+  .hero .form-container {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero .sign-in-text {
+    margin-bottom: 1rem;
+  }
+
+  .hero .social-login {
+    justify-content: space-around;
+  }
+
+  .hero .social-login i {
+    padding: 1rem 1.5rem;
+    margin: 2px auto;
+    border-radius: 10%;
+  }
+
+  .hero .icon {
+    width: 1rem;
+    margin: auto;
+  }
+
+  #bttn {
+    width: 50%;
+    font-size: 12px;
+    height: auto;
+    margin: 0 auto;
   }
 }

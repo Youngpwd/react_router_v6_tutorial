@@ -10,17 +10,17 @@ const SignInForm = () => {
         <div className="social-login">
           <Link to="/">
             <i>
-              <FaFacebook size={20} />
+              <FaFacebook className="icon" size={20} />
             </i>
           </Link>
           <Link to="/">
             <i>
-              <FaTwitter size={20} />
+              <FaTwitter className="icon" size={20} />
             </i>
           </Link>
           <Link to="/">
             <i>
-              <FaGithub size={20} />
+              <FaGithub className="icon" size={20} />
             </i>
           </Link>
         </div>
@@ -33,7 +33,7 @@ const SignInForm = () => {
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
           <input type="password" placeholder="Password" required />
-          <button type="submit" style={{ cursor: "pointer" }} required>
+          <button id="bttn" type="submit" style={{ cursor: "pointer" }} required>
             Create your account
           </button>
         </form>
