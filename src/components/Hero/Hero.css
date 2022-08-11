@@ -136,8 +136,12 @@ form input {
   font-weight: 500;
 }
 
-form button {
-  padding: 0.5rem;
+#bttn {
+  display: block;
+  width: 50%;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  position: relative;
 }
 
 .hero .content button {
