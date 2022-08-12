@@ -4,12 +4,7 @@ import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 
-const Navbar = ({menuOn, handleMenu}) => {
-  const handleClick = () => {
-    handleMenu();
-  };
-  // console.log(menuOn);
-  
+const Navbar = ({ menuOn, handleMenu }) => {
   return (
     <header>
       <nav className="navbar">
@@ -19,7 +14,7 @@ const Navbar = ({menuOn, handleMenu}) => {
           </NavLink>
         </div>
         <ul
-          onClick={() => (menuOn ? handleClick() : null)}
+          onClick={() => (menuOn ? handleMenu() : null)}
           className={menuOn ? "nav-menu active" : "nav-menu"}
         >
           <li className="nav-item">
@@ -43,7 +38,7 @@ const Navbar = ({menuOn, handleMenu}) => {
             </NavLink>
           </li>
         </ul>
-        <div className="hamburger" onClick={handleClick}>
+        <div className="hamburger" onClick={handleMenu}>
           {menuOn ? (
             <FaTimes style={{ color: "#fff", cursor: "pointer" }} size={20} />
           ) : (
