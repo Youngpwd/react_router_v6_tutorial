@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
 import Pricing from "../Pricing/Pricing";
 import Testimonial from "../Testimonial/Testimonial";
+import Footer from "../Footer/Footer";
 import "./Home.css";
 
 const Home = () => {
@@ -32,6 +33,7 @@ const Home = () => {
       <Testimonial />
       <Faq />
       <Contact />
+      <Footer />
     </div>
   );
 };
