@@ -167,7 +167,7 @@ form input {
     width: 100%;
   }
   .hero .container {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .hero .content {
     grid-template-columns: 1fr;
@@ -218,13 +218,15 @@ form input {
   }
 
   .hero .social-login {
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .hero .social-login i {
-    padding: 1rem 1.5rem;
-    margin: 2px auto;
-    border-radius: 10%;
+    padding: 0.5rem 0.8rem;
+    margin: 2px 5px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
   }
 
   .hero .icon {
