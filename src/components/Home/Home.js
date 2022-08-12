@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Contact from "../Contact/Contact";
 import Faq from "../FAQ/Faq";
 import Hero from "../Hero/Hero";
 import Navbar from "../Navbar/Navbar";
@@ -30,6 +31,7 @@ const Home = () => {
       <Pricing />
       <Testimonial />
       <Faq />
+      <Contact />
     </div>
   );
 };
