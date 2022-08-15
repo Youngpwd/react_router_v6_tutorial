@@ -11,16 +11,24 @@ const Footer = () => {
           <h6>Solutions</h6>
           <ul>
             <li>
-              <Link to="/"></Link>Marketing
+              <Link to="/" className="link">
+                Marketing
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Analytics
+              <Link to="/" className="link">
+                Analytics
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Commerce
+              <Link to="/" className="link">
+                Commerce
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Insights
+              <Link to="/" className="link">
+                Insights
+              </Link>
             </li>
           </ul>
         </div>
@@ -28,16 +36,24 @@ const Footer = () => {
           <h6>support</h6>
           <ul>
             <li>
-              <Link to="/"></Link>Pricing
+              <Link to="/" className="link">
+                Pricing
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Documentation
+              <Link to="/" className="link">
+                Documentation
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Guides
+              <Link to="/" className="link">
+                Guides
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>API Status
+              <Link to="/" className="link">
+                API Status
+              </Link>
             </li>
           </ul>
         </div>
@@ -45,16 +61,24 @@ const Footer = () => {
           <h6>company</h6>
           <ul>
             <li>
-              <Link to="/"></Link>About
+              <Link to="/" className="link">
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Blog
+              <Link to="/" className="link">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Jobs
+              <Link to="/" className="link">
+                Jobs
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Press
+              <Link to="/" className="link">
+                Press
+              </Link>
             </li>
           </ul>
         </div>
@@ -62,16 +86,24 @@ const Footer = () => {
           <h6>Legal</h6>
           <ul>
             <li>
-              <Link to="/"></Link>Claim
+              <Link to="/" className="link">
+                Claim
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Privacy
+              <Link to="/" className="link">
+                Privacy
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Cookies
+              <Link to="/" className="link">
+                Cookies
+              </Link>
             </li>
             <li>
-              <Link to="/"></Link>Terms
+              <Link to="/" className="link">
+                Terms
+              </Link>
             </li>
           </ul>
         </div>
