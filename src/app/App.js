@@ -38,8 +38,14 @@ function App() {
           path="/pricing"
           element={<PricingPage handleMenu={handleMenu} menuOn={menuOn} />}
         />
-        <Route path="/faq" element={<FaqPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route
+          path="/faq"
+          element={<FaqPage handleMenu={handleMenu} menuOn={menuOn} />}
+        />
+        <Route
+          path="/contact"
+          element={<ContactPage handleMenu={handleMenu} menuOn={menuOn} />}
+        />
       </Routes>
     </>
   );
