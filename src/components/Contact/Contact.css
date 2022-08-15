@@ -22,7 +22,7 @@
 }
 
 .contact .p {
-  color: var(--grey);
+  color: var(--darkgrey);
 }
 
 .contact .col-1 .address {
@@ -83,6 +83,10 @@
   margin: 0;
   padding-right: 4px;
   width: 20%;
+}
+
+.contact .contact-info {
+  color: var(--darkgrey);
 }
 
 @media screen and (max-width: 960px) {
