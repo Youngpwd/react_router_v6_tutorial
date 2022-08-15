@@ -1,0 +1,54 @@
+.footer {
+  width: 100%;
+  background-color: var(--darkgrey);
+}
+
+.footer .container {
+  max-width: 1240px;
+  padding: 3rem 1rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+
+.footer h6,
+p {
+  color: var(--lightgrey);
+  font-size: 14px;
+  padding: 0.4rem 0;
+}
+
+.footer .link {
+  color: var(--lightgrey);
+  font-size: 14px;
+  padding: 0.4rem 0;
+  display: block;
+}
+
+.footer .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer input {
+  padding: 0.4rem;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 250px;
+  border: 1px solid var(--lightgrey);
+}
+
+.footer button {
+  margin-left: 0.8rem;
+  width: 150px;
+}
+
+.footer .content {
+  max-width: 1240px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--grey);
+}
